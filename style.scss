@@ -13,8 +13,13 @@ $silver: #f8f8f8;
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
+}
 
-	font-family: 'Montserrat', sans-serif !important;
+a,
+a:visited,
+a:active {
+	color: #000 !important;
+	text-decoration: none !important;
 }
 
 //MIXIN
@@ -26,6 +31,7 @@ $silver: #f8f8f8;
 
 .page-section {
 	padding: 70px 0;
+	font-family: 'Montserrat', sans-serif !important;
 }
 
 .section-title {
@@ -175,6 +181,60 @@ $silver: #f8f8f8;
 	}
 }
 
+footer {
+	background-color: $gray;
+	color: #ddd;
+
+	img {
+		height: 60px;
+	}
+
+	.col-md-4 {
+		nav {
+			a {
+				color: #fff !important;
+				font-size: 1.1rem;
+				font-weight: 400;
+
+				&:hover {
+					color: $accent-color !important;
+				}
+			}
+		}
+	}
+
+	.social-wrapper {
+		margin-top: 20px;
+		width: 100%;
+		display: flex;
+
+		.social-icon {
+			height: 40px;
+			width: 40px;
+			margin-right: 10px;
+			background-color: rgba(0, 0, 0, 0.3);
+			color: #fff !important;
+
+			border-radius: 5px;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			&:hover {
+				background-color: rgba(255, 255, 255, 0.2);
+				transition-duration: 200ms;
+				color: $accent-color !important;
+			}
+		}
+	}
+}
+
+//
+//
+//
+/* ----- Media Queries ----- */
+
 @media screen and (max-width: 550px) {
 	.section-title {
 		font-size: 4rem;
@@ -203,6 +263,12 @@ $silver: #f8f8f8;
 			textarea {
 				width: 90%;
 			}
+		}
+	}
+
+	footer {
+		.row > div {
+			margin: 30px 0;
 		}
 	}
 }
