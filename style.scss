@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 /* font-family: 'Montserrat', sans-serif; */
 
+$accent-color: #c79133;
+
 //GLOBAL STYLES
 * {
 	margin: 0px;
@@ -15,6 +17,23 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.page-section {
+	padding: 70px 0;
+}
+
+.section-title {
+	width: 100%;
+	margin-bottom: 50px;
+
+	font-size: 5rem;
+	font-weight: 700;
+	text-align: center;
+
+	span {
+		color: $accent-color;
+	}
 }
 
 //MAIN CSS
@@ -50,7 +69,7 @@
 			align-items: center;
 
 			.title {
-				color: #c79133;
+				color: $accent-color;
 				font-weight: 700;
 				font-size: 5rem;
 				line-height: 6rem;
@@ -89,13 +108,21 @@
 	}
 }
 
-.sample-page {
-	height: 100vh;
-	width: 100%;
-	background-color: lightblue;
+.about {
+	p {
+		padding: 0 150px;
+
+		text-align: justify;
+		font-weight: 500;
+		font-size: 1.2rem;
+	}
 }
 
 @media screen and (max-width: 550px) {
+	.section-title {
+		font-size: 4rem;
+	}
+
 	.landing-page {
 		.container-fluid {
 			.title-wrapper {
@@ -104,6 +131,12 @@
 					line-height: normal;
 				}
 			}
+		}
+	}
+
+	.about {
+		p {
+			padding: 0 20px;
 		}
 	}
 }
