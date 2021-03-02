@@ -57,6 +57,7 @@
 			}
 
 			.sub-heading {
+				max-width: 450px;
 				margin-top: 30px;
 				color: #fff;
 				font-size: 1.2rem;
@@ -65,11 +66,11 @@
 
 			button {
 				margin-top: 80px;
-				padding: 10px 15px;
+				padding: 10px 13px 8px 13px;
 				background-color: rgba(0, 0, 0, 0);
 
 				color: #fff;
-				font-size: 0.9rem;
+				font-size: 0.8rem;
 				text-transform: uppercase;
 				letter-spacing: 2px;
 				font-weight: 500;
@@ -94,6 +95,19 @@
 	background-color: lightblue;
 }
 
+@media screen and (max-width: 550px) {
+	.landing-page {
+		.container-fluid {
+			.title-wrapper {
+				.title {
+					font-size: 4rem;
+					line-height: normal;
+				}
+			}
+		}
+	}
+}
+
 //
 //
 //
@@ -102,6 +116,8 @@
 //
 //
 //
+//
+/*  HEADER AND NAV BAR  */
 
 $gray: #343436;
 $not-black-but-dark: #1c1b20;
@@ -233,15 +249,10 @@ $silver: #f8f8f8;
 				text-decoration: none;
 				letter-spacing: 5px;
 				font-weight: 700;
-				font-size: 5rem;
-				color: rgba(255, 255, 255, 0);
-				-webkit-text-stroke: 1.4px $gray;
-				transition-duration: 200ms;
+				font-size: 3.5rem;
+				color: $not-black-but-dark;
 
-				&:hover {
-					color: $gray;
-					-webkit-text-stroke: 0px $gray;
-				}
+				transition-duration: 200ms;
 			}
 
 			span {
