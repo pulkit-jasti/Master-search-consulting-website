@@ -129,7 +129,76 @@ a:active {
 	}
 }
 
+#team {
+	padding-bottom: 0;
+	h2.section-title {
+		padding: 0 !important;
+		margin-bottom: -30px;
+		//background-color: lightblue;
+	}
+	.container {
+		padding: 100px;
+	}
+
+	.col-md-4 {
+		margin: 40px 0;
+
+		.team-card {
+			//height: 300px;
+			width: 300px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			.img-wrapper {
+				height: 150px;
+				width: 150px;
+				overflow: hidden;
+				border-radius: 500px;
+
+				img {
+					height: 100%;
+					width: 100%;
+				}
+			}
+
+			.title {
+				color: rgba(0, 0, 0, 0.5);
+			}
+
+			.social-wrapper {
+				margin-top: 7px;
+				a {
+					margin: 0 3px;
+				}
+			}
+
+			.social-icon {
+				height: 40px;
+				width: 40px;
+				margin-right: 10px;
+				background-color: #333;
+				color: #fff !important;
+
+				border-radius: 5px;
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				&:hover {
+					//background-color: rgba(0, 0, 0, 0.6);
+					transition-duration: 200ms;
+					color: $accent-color !important;
+				}
+			}
+		}
+	}
+}
+
 #contact {
+	padding-top: 0;
+
 	form {
 		//background-color: lightblue;
 		display: flex;
