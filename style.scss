@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 /* font-family: 'Montserrat', sans-serif; */
 
-$accent-color: #c79133;
+$accent-color: #db9a29;
 $transition-duration: 150ms;
 
 $gray: #343436;
@@ -126,6 +126,40 @@ a:active {
 		text-align: justify;
 		font-weight: 500;
 		font-size: 1.2rem;
+	}
+}
+
+#clients {
+	h2 {
+		font-size: 3rem;
+	}
+
+	.container {
+		padding: 0 70px;
+
+		.box {
+			height: 80px;
+			padding: 0 30px;
+			margin: 10px;
+
+			img {
+				height: 100%;
+			}
+		}
+
+		.rev {
+			margin-top: 30px;
+			transform: rotate(180deg);
+
+			.box {
+				transform: rotate(180deg);
+			}
+		}
+	}
+
+	h4 {
+		text-align: center;
+		margin: 70px 0 60px 0;
 	}
 }
 

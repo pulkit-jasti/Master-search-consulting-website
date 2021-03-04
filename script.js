@@ -4,9 +4,16 @@ $('.menu-btn').click(function () {
 	$('.menu-container').toggleClass('active');
 });
 
-const cursor = curDot();
-
-cursor.over('.line-1', {
-	borderColor: 'rgba(255,255,255,.38)',
-	broderWidth: 2,
+$('.client-carousel').slick({
+	slidesToShow: 4,
+	autoplay: true,
+	autoplaySpeed: 1000,
+	arrows: false,
+	infinite: true,
+	pauseOnHover: false,
+	pauseOnFocus: false,
+	focusOnSelect: false,
+	variableWidth: true,
 });
+
+console.log('hulle hulle');
