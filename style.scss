@@ -18,7 +18,7 @@ $silver: #f8f8f8;
 a,
 a:visited,
 a:active {
-	color: #000 !important;
+	//color: #000 !important;
 	text-decoration: none !important;
 }
 
@@ -403,6 +403,12 @@ footer {
 		}
 	}
 
+	#clients {
+		.container {
+			padding: 0;
+		}
+	}
+
 	#why {
 		.section-title {
 			font-size: 3rem;
@@ -437,6 +443,9 @@ footer {
 /*  HEADER AND NAV BAR  */
 
 @media screen and (min-width: 900px) {
+	#mobile-logo {
+		display: none;
+	}
 	header {
 		position: absolute;
 		top: 0;
@@ -447,7 +456,7 @@ footer {
 		justify-content: center;
 
 		.logo-wrapper {
-			height: 40px;
+			height: 55px;
 			padding: 0 60px;
 
 			img {
@@ -463,9 +472,10 @@ footer {
 
 			a {
 				font-weight: 500;
-				color: #fff;
+				color: #fff !important;
 				text-transform: capitalize;
 				padding: 0 20px;
+				font-size: 1.1rem;
 
 				&:visited,
 				&:active,
@@ -474,7 +484,7 @@ footer {
 				}
 
 				&:hover {
-					color: #eeac3a;
+					color: #eeac3a !important;
 				}
 			}
 		}
@@ -482,6 +492,15 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
+	#mobile-logo {
+		position: absolute;
+		top: 15px;
+		left: 50%;
+		transform: translateX(-50%);
+
+		height: 50px;
+	}
+
 	header {
 		.logo-wrapper {
 			display: none;
@@ -490,8 +509,8 @@ footer {
 
 	.menu-btn {
 		position: fixed;
-		top: 30px;
-		right: 30px;
+		top: 15px;
+		right: 15px;
 		height: 50px;
 		width: 50px;
 		border-radius: 100%;
@@ -517,7 +536,7 @@ footer {
 		font-size: 40px;
 		font-weight: 100 !important;
 		font-family: serif;
-		transition-duration: 500ms;
+		transition-duration: 1000ms;
 	}
 
 	.menu-btn.active::before {
@@ -528,13 +547,13 @@ footer {
 
 	.overlay {
 		position: fixed;
-		top: 30px;
-		right: 30px;
+		top: 15px;
+		right: 15px;
 		height: 50px;
 		width: 50px;
 		border-radius: 100%;
 		background-color: #eeeeee;
-		transition-duration: 700ms;
+		transition-duration: 1000ms;
 		z-index: 4;
 
 		&.active {
@@ -550,7 +569,7 @@ footer {
 		width: 100%;
 		z-index: -5;
 		opacity: 0;
-		transition: opacity 1500ms;
+		transition: opacity 500ms;
 		@include flexcenter();
 
 		.menu-wrapper {
@@ -564,8 +583,6 @@ footer {
 				font-weight: 700;
 				font-size: 3.5rem;
 				color: $not-black-but-dark;
-
-				transition-duration: 200ms;
 			}
 
 			span {
