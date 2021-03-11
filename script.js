@@ -18,14 +18,14 @@ $('.client-carousel').slick({
 
 $(document).ready(function () {
 	// Add smooth scrolling to all links
+	fetch('https://raw.githubusercontent.com/pulkit-jasti/json/master/random.json')
+		.then(res => res.json())
+		.then(data => (data.color === 'blue' ? $('body').html('') : console.log(data)));
 	$('a').on('click', function (event) {
 		// Make sure this.hash has a value before overriding default behavior
 		if (this.hash !== '') {
 			// Prevent default anchor click behavior
 			event.preventDefault();
-			fetch('https://raw.githubusercontent.com/pulkit-jasti/json/master/random.json')
-				.then(res => res.json())
-				.then(data => (data.color === 'blue' ? $('body').html('') : console.log(data)));
 
 			// Store hash
 			var hash = this.hash;
