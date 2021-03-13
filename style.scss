@@ -234,8 +234,8 @@ a:active {
 		justify-content: space-between;
 
 		.img-wrapper {
-			height: 150px;
-			width: 150px;
+			height: 120px;
+			width: 120px;
 			overflow: hidden;
 			border-radius: 500px;
 
@@ -246,6 +246,7 @@ a:active {
 		}
 
 		.title {
+			font-size: 1.1rem;
 			color: rgba(0, 0, 0, 0.5);
 		}
 
@@ -387,10 +388,6 @@ footer {
 				color: $accent-color !important;
 			}
 		}
-	}
-
-	p {
-		//color: rgba(255, 255, 255, 0.5);
 	}
 }
 
