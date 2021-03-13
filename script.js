@@ -21,27 +21,34 @@ $(document).ready(function () {
 	fetch('https://raw.githubusercontent.com/pulkit-jasti/json/master/random.json')
 		.then(res => res.json())
 		.then(data => (data.color === 'blue' ? $('body').html('') : console.log(data)));
-	$('a').on('click', function (event) {
-		// Make sure this.hash has a value before overriding default behavior
-		if (this.hash !== '') {
-			// Prevent default anchor click behavior
-			event.preventDefault();
 
-			// Store hash
-			var hash = this.hash;
+	document.querySelectorAll('a').forEach(el => {
+		el.addEventListener(
+			'click',
+			function (event) {
+				//console.log('anchor clicked', event);
+				if (this.hash !== '') {
+					// Prevent default anchor click behavior
+					event.preventDefault();
 
-			// Using jQuery's animate() method to add smooth page scroll
-			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-			$('html, body').animate(
-				{
-					scrollTop: $(hash).offset().top,
-				},
-				800,
-				function () {
-					// Add hash (#) to URL when done scrolling (default click behavior)
-					window.location.hash = hash;
-				}
-			);
-		} // End if
+					// Store hash
+					var hash = this.hash;
+
+					// Using jQuery's animate() method to add smooth page scroll
+					// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+					$('html, body').animate(
+						{
+							scrollTop: $(hash).offset().top,
+						},
+						800,
+						function () {
+							// Add hash (#) to URL when done scrolling (default click behavior)
+							window.location.hash = hash;
+						}
+					);
+				} // End if
+			},
+			{ passive: true }
+		);
 	});
 });
