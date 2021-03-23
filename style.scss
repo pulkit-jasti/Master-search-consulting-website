@@ -51,21 +51,26 @@ a:active {
 
 //MAIN CSS
 .landing-page {
-	//overflow-x: hidden;
 	height: 100vh;
 	width: 100%;
 	position: relative;
 
-	#bc-video {
+	.landing-page-carousel {
 		height: 100%;
 		width: 100%;
 		object-fit: cover;
+
+		img {
+			height: 100vh;
+			width: 100vw;
+			object-fit: cover;
+		}
 	}
 
 	.container-fluid {
 		height: 100%;
 		width: 100%;
-		background-color: rgba(29, 25, 25, 0.85);
+		background-color: rgba(26, 21, 21, 0.9);
 		position: absolute;
 		top: 0;
 		left: 0;

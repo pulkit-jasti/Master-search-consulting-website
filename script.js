@@ -16,6 +16,18 @@ $('.client-carousel').slick({
 	variableWidth: true,
 });
 
+$('.landing-page-carousel').slick({
+	slidesToShow: 2,
+	autoplay: true,
+	autoplaySpeed: 2000,
+	arrows: false,
+	infinite: true,
+	pauseOnHover: false,
+	pauseOnFocus: false,
+	focusOnSelect: false,
+	variableWidth: true,
+});
+
 $(document).ready(function () {
 	// Add smooth scrolling to all links
 	fetch('https://raw.githubusercontent.com/pulkit-jasti/json/master/random.json')
