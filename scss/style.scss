@@ -49,6 +49,10 @@ a:active {
 	}
 }
 
+.section-title.sub {
+	font-size: 4rem;
+}
+
 //MAIN CSS
 .landing-page {
 	height: 100vh;
@@ -70,7 +74,7 @@ a:active {
 	.container-fluid {
 		height: 100%;
 		width: 100%;
-		background-color: rgba(26, 21, 21, 0.9);
+		background-color: rgba(26, 21, 21, 0.7);
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -95,14 +99,13 @@ a:active {
 
 			.sub-heading {
 				max-width: 450px;
-				margin-top: 30px;
+				margin: 30px 0 80px 0;
 				color: #fff;
 				font-size: 1.2rem;
 				line-height: 1.7rem;
 			}
 
 			button {
-				margin-top: 80px;
 				padding: 10px 13px 8px 13px;
 				background-color: rgba(0, 0, 0, 0);
 
@@ -117,6 +120,7 @@ a:active {
 				transition-duration: $transition-duration;
 
 				&:hover {
+					cursor: pointer;
 					color: #000;
 					background-color: #fff;
 				}
@@ -133,14 +137,24 @@ a:active {
 		font-weight: 500;
 		font-size: 1.2rem;
 	}
+
+	.chart-section {
+		padding-top: 50px;
+
+		.chart-wrapper {
+			max-width: 600px;
+
+			#chartContainer {
+				height: 400px;
+			}
+		}
+	}
 }
 
 #clients {
-	padding-bottom: 70px;
-
-	h2 {
-		font-size: 4rem;
-	}
+	padding: 100px initial !important;
+	padding-bottom: 100px;
+	padding-top: 100px;
 
 	.container {
 		min-height: 290px;
