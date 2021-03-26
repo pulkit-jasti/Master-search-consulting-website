@@ -178,8 +178,8 @@ a:active {
 			align-items: center;
 
 			.card {
-				width: 300px;
-				margin: 20px;
+				width: 200px;
+				margin: 4px;
 
 				display: flex;
 				flex-direction: column;
@@ -191,15 +191,16 @@ a:active {
 				.text {
 					background-color: rgba(26, 21, 21, 0.8);
 					padding: 25px;
+					margin: 0;
 
 					text-align: justify;
 					font-weight: 500;
 				}
 
 				.heading {
-					width: 160px;
-					margin-top: 20px;
-					padding: 7px 25px;
+					width: 100%;
+					margin-top: 4px;
+					padding: 7px 45px;
 					background-color: #ce8c1a;
 
 					text-align: center;
