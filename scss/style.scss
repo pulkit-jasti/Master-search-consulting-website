@@ -130,12 +130,51 @@ a:active {
 }
 
 #about {
-	p {
+	.about-text {
 		padding: 0 150px;
 
 		text-align: justify;
 		font-weight: 500;
 		font-size: 1.2rem;
+	}
+
+	.industry-spec {
+		padding: 100px 0;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.card-container {
+			max-width: 880px;
+			margin-top: 30px;
+
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+
+			.card {
+				width: 230px;
+				//background-color: lightblue;
+				margin: 20px;
+
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				i {
+					font-size: 3rem;
+					color: $accent-color;
+				}
+
+				p {
+					margin-top: 25px;
+
+					text-align: center;
+					font-weight: 500;
+				}
+			}
+		}
 	}
 
 	.chart-section {
@@ -486,6 +525,10 @@ footer {
 		font-size: 4rem;
 	}
 
+	.section-title.sub {
+		font-size: 2.5rem;
+	}
+
 	.landing-page {
 		.container-fluid {
 			.title-wrapper {
@@ -498,8 +541,18 @@ footer {
 	}
 
 	#about {
-		p {
+		.about-text {
 			padding: 0 10px;
+		}
+	}
+
+	#services {
+		.container-fluid {
+			.card-container {
+				.card {
+					margin: 30px 0;
+				}
+			}
 		}
 	}
 
