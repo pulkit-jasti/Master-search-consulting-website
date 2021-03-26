@@ -3,6 +3,7 @@
 
 $accent-color: #db9a29;
 $transition-duration: 150ms;
+$light-grey: rgba(231, 231, 231, 0.692);
 
 $gray: #343436;
 $not-black-but-dark: #1c1b20;
@@ -290,7 +291,6 @@ a:active {
 	}
 
 	.extra-clients {
-		background-color: lightblue;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -300,54 +300,63 @@ a:active {
 			overflow: hidden;
 
 			height: 0;
-			width: 900px;
-			background-color: lightcoral;
+			width: fit-content;
+			padding-left: 70px;
 
 			display: flex;
 			flex-wrap: wrap;
 
+			font-size: 1.1rem;
+			font-weight: 500;
+			color: rgba(0, 0, 0, 0.5);
+
 			p {
-				width: 180px;
-				margin: 20px;
-				background-color: lightgreen;
+				width: 220px;
+				margin: 20px 20px;
 			}
 		}
 
 		.btn-container {
-			#clients-menu-btn {
-				background-color: lightgreen;
+			margin-top: 30px;
+			padding: 10px 20px;
+			background-color: $light-grey;
+			border-radius: 7px;
 
+			#clients-menu-btn {
 				display: flex;
 				align-items: center;
 				justify-content: center;
 
 				p {
 					line-height: 19px;
-					margin: 0;
+					margin: 0 7px 0 0;
 					height: 19px;
-					background-color: lightsalmon;
+
+					font-weight: 700;
 				}
 
 				i {
 					height: 17px;
-					background-color: lightseagreen;
 					font-size: 1.2rem;
 					transition-duration: 500ms;
 				}
 			}
+
+			&:hover {
+				cursor: pointer;
+			}
 		}
 
 		&.menu-open {
-			background-color: lightslategrey;
-
 			.clients-container {
 				height: unset;
+				padding-top: 40px;
 			}
 
 			.btn-container {
 				#clients-menu-btn {
 					i {
-						transform: rotate(180deg);
+						transform: rotate(-180deg);
 					}
 				}
 			}
@@ -360,7 +369,6 @@ a:active {
 		font-size: 4.5rem;
 	}
 	.container {
-		//background-color: lightcoral;
 		max-width: 1200px;
 
 		.why-card {
@@ -417,7 +425,7 @@ a:active {
 		width: 330px;
 		margin: 40px 20px;
 		padding: 40px 30px;
-		background-color: rgba(231, 231, 231, 0.692);
+		background-color: $light-grey;
 		border-radius: 20px;
 
 		.img-wrapper {
@@ -510,6 +518,7 @@ a:active {
 
 		input[type='file']::file-selector-button {
 			padding: 12px 17px 10px 17px;
+			background-color: $light-grey;
 
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 500;
@@ -735,8 +744,8 @@ footer {
 		justify-content: center;
 
 		.logo-wrapper {
-			height: 55px;
-			padding: 0 60px;
+			height: 60px;
+			padding: 0 80px;
 
 			img {
 				height: 100%;
@@ -753,7 +762,7 @@ footer {
 				font-weight: 500;
 				color: #fff !important;
 				text-transform: capitalize;
-				padding: 0 20px;
+				padding: 0 30px;
 				font-size: 1.1rem;
 
 				&:visited,
