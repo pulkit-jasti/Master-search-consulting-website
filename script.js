@@ -89,3 +89,9 @@ var chart = new CanvasJS.Chart('chartContainer', {
 	],
 });
 chart.render();
+
+//extra clients menu
+document.getElementById('clients-menu-btn').addEventListener('click', () => {
+	document.querySelector('.extra-clients').classList.toggle('menu-open');
+	//document.querySelector('.clients-container').style.height =;
+});

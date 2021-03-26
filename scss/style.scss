@@ -288,6 +288,71 @@ a:active {
 		text-align: center;
 		margin-top: 70px;
 	}
+
+	.extra-clients {
+		background-color: lightblue;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.clients-container {
+			position: relative;
+			overflow: hidden;
+
+			height: 0;
+			width: 900px;
+			background-color: lightcoral;
+
+			display: flex;
+			flex-wrap: wrap;
+
+			p {
+				width: 180px;
+				margin: 20px;
+				background-color: lightgreen;
+			}
+		}
+
+		.btn-container {
+			#clients-menu-btn {
+				background-color: lightgreen;
+
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				p {
+					line-height: 19px;
+					margin: 0;
+					height: 19px;
+					background-color: lightsalmon;
+				}
+
+				i {
+					height: 17px;
+					background-color: lightseagreen;
+					font-size: 1.2rem;
+					transition-duration: 500ms;
+				}
+			}
+		}
+
+		&.menu-open {
+			background-color: lightslategrey;
+
+			.clients-container {
+				height: unset;
+			}
+
+			.btn-container {
+				#clients-menu-btn {
+					i {
+						transform: rotate(180deg);
+					}
+				}
+			}
+		}
+	}
 }
 
 #why {
