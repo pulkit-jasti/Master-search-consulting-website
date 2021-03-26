@@ -410,16 +410,25 @@ a:active {
 	}
 }
 
-#contact {
+#career {
+	margin-bottom: 60px;
+}
+
+#contact,
+#career {
 	padding-top: 0;
 
+	.info {
+		text-align: justify;
+		padding-bottom: 30px;
+	}
+
 	form {
-		//background-color: lightblue;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 
-		input,
+		input[type='text'],
 		textarea {
 			width: 500px;
 			margin: 13px 0;
@@ -427,6 +436,28 @@ a:active {
 
 			border: 2px solid $not-black-but-dark;
 			outline: none;
+		}
+
+		input[type='file'] {
+			width: 500px;
+			padding: 0;
+		}
+
+		input[type='file']::file-selector-button {
+			padding: 12px 17px 10px 17px;
+
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 500;
+
+			border-radius: 7px;
+			border: none;
+			outline: none;
+
+			box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+			&:hover {
+				cursor: pointer;
+			}
 		}
 
 		input:focus,
@@ -464,6 +495,13 @@ a:active {
 				background-color: $not-black-but-dark;
 				color: #fff;
 			}
+		}
+
+		p {
+			width: 500px;
+			margin-top: 30px;
+
+			font-weight: 600;
 		}
 	}
 }
@@ -574,9 +612,13 @@ footer {
 		}
 	}
 
-	#contact {
+	#contact,
+	#career {
 		form {
-			input,
+			input[type='text'],
+			input[type='file'],
+			p,
+			.info,
 			textarea {
 				width: 90%;
 			}
