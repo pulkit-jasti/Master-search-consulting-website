@@ -130,6 +130,12 @@ a:active {
 }
 
 #about {
+	margin-top: 40px;
+
+	& > h2 {
+		font-size: 4.5rem;
+	}
+
 	.about-text {
 		padding: 0 150px;
 
