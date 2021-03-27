@@ -65,31 +65,6 @@ $(document).ready(function () {
 	});
 });
 
-//pyramid
-var chart = new CanvasJS.Chart('chartContainer', {
-	animationEnabled: true,
-	exportEnabled: true,
-	title: {
-		text: '',
-	},
-	data: [
-		{
-			type: 'pyramid',
-			indexLabelFontSize: 18,
-			valueRepresents: 'area',
-			showInLegend: true,
-			legendText: '{indexLabel}',
-			toolTipContent: '<b>{indexLabel}</b>',
-			dataPoints: [
-				{ y: 60, indexLabel: 'C-2 Middle Management', color: '#db9a29' },
-				{ y: 30, indexLabel: 'C-1  Senior Management', color: '#e7a024c0' },
-				{ y: 10, indexLabel: 'C-Suite', color: '#db9a296c' },
-			],
-		},
-	],
-});
-chart.render();
-
 //extra clients menu
 document.getElementById('clients-menu-btn').addEventListener('click', () => {
 	document.querySelector('.extra-clients').classList.toggle('menu-open');
