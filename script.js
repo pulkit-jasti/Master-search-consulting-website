@@ -69,3 +69,9 @@ $(document).ready(function () {
 document.getElementById('clients-menu-btn').addEventListener('click', () => {
 	document.querySelector('.extra-clients').classList.toggle('menu-open');
 });
+
+document.querySelectorAll('.clients-container p').forEach(el => {
+	el.innerHTML.length > 20 ? (el.innerHTML = el.innerHTML.slice(0, 20) + '...') : null;
+});
+
+//console.log(document.querySelectorAll('.clients-container>p'));
