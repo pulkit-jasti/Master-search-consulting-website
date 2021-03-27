@@ -161,7 +161,7 @@ a:active {
 			flex-wrap: wrap;
 
 			.card {
-				width: 230px;
+				width: 220px;
 				//background-color: lightblue;
 				margin: 20px;
 
@@ -185,14 +185,22 @@ a:active {
 	}
 
 	.chart-section {
-		padding: 50px 0;
+		//padding: 50px 0;
 
 		.chart-wrapper {
-			max-width: 600px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 
-			#chartContainer {
-				height: 400px;
-			}
+		.pyramid-desktop {
+			width: 100%;
+			max-width: 700px;
+		}
+
+		.pyramid-mobile {
+			display: none;
+			width: 100%;
 		}
 	}
 }
@@ -407,8 +415,6 @@ a:active {
 }
 
 #team {
-	padding-bottom: 0;
-
 	h2.section-title {
 		padding: 0 !important;
 		margin-bottom: -30px;
@@ -422,9 +428,9 @@ a:active {
 	}
 
 	.team-card {
-		width: 330px;
-		margin: 40px 20px;
-		padding: 40px 30px;
+		width: 340px;
+		margin: 40px 20px 0 20px;
+		padding: 40px 30px 15px 30px;
 		background-color: $light-grey;
 		border-radius: 20px;
 
@@ -492,8 +498,10 @@ a:active {
 	padding-top: 0;
 
 	.info {
-		text-align: justify;
 		padding: 0 150px 30px 150px;
+
+		text-align: justify;
+		font-weight: 500;
 	}
 
 	form {
@@ -662,6 +670,16 @@ footer {
 		.about-text {
 			padding: 0 10px;
 		}
+
+		.chart-section {
+			.pyramid-desktop {
+				display: none;
+			}
+
+			.pyramid-mobile {
+				display: unset;
+			}
+		}
 	}
 
 	#services {
@@ -686,6 +704,12 @@ footer {
 		}
 	}
 
+	#career {
+		h2.sub {
+			margin-bottom: 20px;
+		}
+	}
+
 	#contact,
 	#career {
 		form {
@@ -696,6 +720,10 @@ footer {
 			textarea {
 				width: 90%;
 			}
+		}
+
+		.info {
+			padding: 15px;
 		}
 	}
 
