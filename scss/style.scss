@@ -313,18 +313,17 @@ a:active {
 
 			height: 0;
 			width: fit-content;
-			padding-left: 70px;
+			padding-left: 60px;
 
 			display: flex;
 			flex-wrap: wrap;
 
-			font-size: 1.1rem;
 			font-weight: 500;
 			color: rgba(0, 0, 0, 0.5);
 
 			p {
-				width: 220px;
-				margin: 20px 20px;
+				width: 200px;
+				margin: 0 10px 5px 0;
 			}
 		}
 
