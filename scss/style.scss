@@ -75,7 +75,7 @@ a:active {
 	.container-fluid {
 		height: 100%;
 		width: 100%;
-		background-color: rgba(26, 21, 21, 0.7);
+		background-color: rgba(26, 21, 21, 0.3);
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -92,14 +92,15 @@ a:active {
 			align-items: center;
 
 			.title {
-				color: $accent-color;
+				color: #fff;
 				font-weight: 700;
 				font-size: 5rem;
 				line-height: 6rem;
+				//-webkit-text-stroke: 1px #fff;
 			}
 
 			.sub-heading {
-				max-width: 450px;
+				max-width: 580px;
 				margin: 30px 0 80px 0;
 				color: #fff;
 				font-size: 1.2rem;
@@ -108,22 +109,22 @@ a:active {
 
 			button {
 				padding: 10px 13px 8px 13px;
-				background-color: rgba(0, 0, 0, 0);
+				background-color: #fff;
 
-				color: #fff;
+				color: $not-black-but-dark;
 				font-size: 0.8rem;
 				text-transform: uppercase;
 				letter-spacing: 2px;
-				font-weight: 500;
+				font-weight: 700;
 
-				outline: none;
 				border: 2px solid #fff;
-				transition-duration: $transition-duration;
+				outline: none;
+				transition-duration: 300ms;
 
 				&:hover {
 					cursor: pointer;
-					color: #000;
-					background-color: #fff;
+					color: #fff;
+					background-color: rgba(0, 0, 0, 0);
 				}
 			}
 		}
@@ -775,7 +776,7 @@ footer {
 		justify-content: center;
 
 		.logo-wrapper {
-			height: 60px;
+			height: 80px;
 			padding: 0 80px;
 
 			img {
