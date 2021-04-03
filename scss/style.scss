@@ -234,7 +234,7 @@ a:active {
 			align-items: center;
 
 			.card {
-				width: 340px;
+				width: max-content;
 				margin: 4px;
 
 				display: flex;
@@ -259,7 +259,7 @@ a:active {
 				.heading {
 					width: 100%;
 					margin-bottom: 4px;
-					padding: 10px 45px;
+					padding: 20px 45px;
 					background-color: #ce8c1a;
 
 					text-align: center;
