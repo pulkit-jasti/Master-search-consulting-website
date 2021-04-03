@@ -154,8 +154,9 @@ a:active {
 		align-items: center;
 
 		.card-container {
-			max-width: 880px;
+			max-width: 1040px;
 			margin-top: 30px;
+			//background-color: lightblue;
 
 			display: flex;
 			justify-content: center;
@@ -385,7 +386,7 @@ a:active {
 
 		.why-card {
 			height: 300px;
-			width: 300px;
+			width: 320px;
 			margin: 30px;
 			padding: 20px;
 			background-color: #333;
@@ -409,10 +410,6 @@ a:active {
 				background-color: rgba(255, 255, 255, 0.1);
 				border-radius: 500px;
 				font-size: 2rem;
-			}
-
-			h3 {
-				margin-top: 20px;
 			}
 		}
 	}
