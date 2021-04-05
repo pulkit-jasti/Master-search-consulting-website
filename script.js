@@ -19,7 +19,7 @@ $('.client-carousel').slick({
 $('.landing-page-carousel').slick({
 	slidesToShow: 2,
 	autoplay: true,
-	autoplaySpeed: 2000,
+	autoplaySpeed: 4000,
 	arrows: false,
 	infinite: true,
 	pauseOnHover: false,
@@ -73,5 +73,3 @@ document.getElementById('clients-menu-btn').addEventListener('click', () => {
 document.querySelectorAll('.clients-container p').forEach(el => {
 	el.innerHTML.length > 20 ? (el.innerHTML = el.innerHTML.slice(0, 20) + '...') : null;
 });
-
-//console.log(document.querySelectorAll('.clients-container>p'));
