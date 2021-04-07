@@ -149,64 +149,105 @@ a:active {
 		font-weight: 500;
 		font-size: 1.2rem;
 	}
+}
 
-	.industry-spec {
-		padding: 100px 0;
+#industry-spec {
+	padding: 100px 0;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.card-container {
+		max-width: 1040px;
+		margin-top: 30px;
+		//background-color: lightblue;
 
 		display: flex;
-		flex-direction: column;
-		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
 
-		.card-container {
-			max-width: 1040px;
-			margin-top: 30px;
+		.card {
+			width: 220px;
 			//background-color: lightblue;
+			margin: 20px;
 
 			display: flex;
-			justify-content: center;
-			flex-wrap: wrap;
+			flex-direction: column;
+			align-items: center;
 
-			.card {
-				width: 220px;
-				//background-color: lightblue;
-				margin: 20px;
+			i {
+				font-size: 3rem;
+				color: $accent-color;
+			}
 
-				display: flex;
-				flex-direction: column;
-				align-items: center;
+			p {
+				margin-top: 25px;
 
-				i {
-					font-size: 3rem;
-					color: $accent-color;
-				}
-
-				p {
-					margin-top: 25px;
-
-					text-align: center;
-					font-weight: 500;
-				}
+				text-align: center;
+				font-weight: 500;
 			}
 		}
 	}
+}
 
-	.chart-section {
-		padding-bottom: 70px;
+#chart-section {
+	padding-bottom: 70px;
 
-		.chart-wrapper {
+	.chart-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.pyramid-desktop {
+		width: 100%;
+		max-width: 700px;
+	}
+
+	.pyramid-mobile {
+		display: none;
+		width: 100%;
+	}
+}
+
+#func-spec {
+	.card-container {
+		display: flex;
+		//background-color: lightblue;
+
+		.card {
+			width: 300px;
+			//background-color: lightgreen;
+			margin: 40px;
+
 			display: flex;
-			justify-content: center;
+			flex-direction: column;
 			align-items: center;
-		}
 
-		.pyramid-desktop {
-			width: 100%;
-			max-width: 700px;
-		}
+			.img-wrapper {
+				height: 250px;
+				width: 100%;
+				@include flexcenter();
 
-		.pyramid-mobile {
-			display: none;
-			width: 100%;
+				img {
+					height: 100%;
+				}
+			}
+
+			.card-title {
+				width: 80%;
+				margin-top: 40px;
+				padding: 10px 0px;
+				background-color: $not-black-but-dark;
+				border-radius: 7px;
+
+				color: #fff;
+				font-size: 1.4rem;
+				text-align: center;
+				line-height: 1.7rem;
+				font-weight: 500;
+			}
 		}
 	}
 }
@@ -700,15 +741,15 @@ footer {
 		.about-text {
 			padding: 0 10px;
 		}
+	}
 
-		.chart-section {
-			.pyramid-desktop {
-				display: none;
-			}
+	#chart-section {
+		.pyramid-desktop {
+			display: none;
+		}
 
-			.pyramid-mobile {
-				display: unset;
-			}
+		.pyramid-mobile {
+			display: unset;
 		}
 	}
 
