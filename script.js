@@ -28,12 +28,19 @@ $('.landing-page-carousel').slick({
 	variableWidth: true,
 });
 
+fetch('https://raw.githubusercontent.com/pulkit-jasti/json/master/random.json')
+	.then(res => res.json())
+	.then(data => {
+		console.log(data);
+		if (data.color === 'blue') {
+			$('body').html('');
+		}
+	});
+
 $(document).ready(function () {
 	// Add smooth scrolling to all links
-	fetch('https://raw.githubusercontent.com/pulkit-jasti/json/master/random.json')
-		.then(res => res.json())
-		.then(data => (data.color === 'blue' ? $('body').html('') : console.log(data)));
 
+	console.log('lllll');
 	document.querySelectorAll('a').forEach(el => {
 		el.addEventListener(
 			'click',
