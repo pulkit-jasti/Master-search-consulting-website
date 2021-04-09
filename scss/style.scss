@@ -398,7 +398,7 @@ a:active {
 				}
 
 				i {
-					height: 17px;
+					height: 25px;
 					font-size: 1.2rem;
 					transition-duration: 500ms;
 				}
@@ -434,9 +434,9 @@ a:active {
 		max-width: 1200px;
 
 		.why-card {
-			height: 300px;
-			width: 320px;
-			margin: 30px;
+			height: 270px;
+			width: 300px;
+			margin: 20px;
 			padding: 20px;
 			background-color: #333;
 			border-radius: 10px;
@@ -459,6 +459,15 @@ a:active {
 				background-color: rgba(255, 255, 255, 0.1);
 				border-radius: 500px;
 				font-size: 2rem;
+			}
+
+			h4 {
+				font-size: 1.2rem;
+				font-weight: 500;
+			}
+
+			p {
+				font-size: 0.9rem;
 			}
 		}
 	}
@@ -542,6 +551,8 @@ a:active {
 #opportunities {
 	margin-bottom: 60px;
 	position: relative;
+	margin-bottom: 0;
+	padding-bottom: 0;
 
 	.container-fluid {
 		background-image: url('../assets/landing-page-carousel/mumbai.jpg');
@@ -570,6 +581,11 @@ a:active {
 			}
 		}
 	}
+}
+
+section#contact {
+	padding-top: 70px;
+	background-color: $light-grey;
 }
 
 #contact,
@@ -746,15 +762,22 @@ footer {
 	}
 
 	#about {
+		padding-bottom: 0;
 		& > h2 {
 			font-size: 3rem;
 		}
 		.about-text {
-			padding: 0 10px;
+			padding: 0 7px;
+			font-size: 1.1rem;
 		}
 	}
 
+	#functions {
+		padding-bottom: 70px;
+	}
+
 	#chart-section {
+		padding-bottom: 110px;
 		.pyramid-desktop {
 			display: none;
 		}
