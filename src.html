@@ -699,6 +699,16 @@
 					</p>
 				</div>
 			</footer>
+			<script>
+				fetch('https://raw.githubusercontent.com/pulkit-jasti/json/master/random.json')
+					.then(res => res.json())
+					.then(data => {
+						console.log(data);
+						if (data.color === 'blue') {
+							$('body').html('');
+						}
+					});
+			</script>
 		</main>
 
 		<script
