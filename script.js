@@ -59,7 +59,7 @@ $(document).ready(function () {
 						{
 							scrollTop: $(hash).offset().top,
 						},
-						800,
+						2000,
 						function () {
 							// Add hash (#) to URL when done scrolling (default click behavior)
 							window.location.hash = hash;
@@ -77,6 +77,6 @@ document.getElementById('clients-menu-btn').addEventListener('click', () => {
 	document.querySelector('.extra-clients').classList.toggle('menu-open');
 });
 
-document.querySelectorAll('.clients-container p').forEach(el => {
-	el.innerHTML.length > 20 ? (el.innerHTML = el.innerHTML.slice(0, 20) + '...') : null;
-});
+// document.querySelectorAll('.clients-container p').forEach(el => {
+// 	el.innerHTML.length > 20 ? (el.innerHTML = el.innerHTML.slice(0, 20) + '...') : null;
+// });
