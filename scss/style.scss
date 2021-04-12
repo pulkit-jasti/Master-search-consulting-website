@@ -9,6 +9,11 @@ $gray: #343436;
 $not-black-but-dark: #1c1b20;
 $silver: #f8f8f8;
 
+@font-face {
+	font-family: Mermaid;
+	src: url(../assets/sonata.otf);
+}
+
 //GLOBAL STYLES
 * {
 	margin: 0px;
@@ -45,8 +50,10 @@ a:active {
 	color: $not-black-but-dark;
 
 	font-size: 5rem;
-	font-weight: 700;
+	font-weight: 600;
 	text-align: center;
+	font-family: Mermaid;
+	letter-spacing: 10px;
 
 	span {
 		color: $accent-color;
@@ -122,10 +129,11 @@ a:active {
 
 			.title {
 				color: #fff;
-				font-weight: 700;
-				font-size: 5rem;
+				font-weight: 500;
+				font-size: 5.5rem;
 				line-height: 6rem;
-				//-webkit-text-stroke: 1px #fff;
+				font-family: Mermaid;
+				letter-spacing: 10px;
 			}
 
 			.sub-heading {
@@ -270,6 +278,7 @@ a:active {
 	padding-bottom: 150px;
 
 	.chart-wrapper {
+		padding-left: 15%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -403,7 +412,7 @@ a:active {
 
 			font-weight: 500;
 			color: rgba(0, 0, 0, 0.5);
-			font-size: 0.7rem;
+			font-size: 0.8rem;
 
 			p {
 				width: 200px;
@@ -836,6 +845,12 @@ footer {
 	#clients {
 		.container {
 			padding: 0;
+
+			.extra-clients {
+				.clients-container {
+					font-size: 1.1rem;
+				}
+			}
 		}
 	}
 
