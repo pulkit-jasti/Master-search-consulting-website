@@ -235,13 +235,14 @@ a:active {
 	}
 
 	.card-container {
+		max-width: 1200px;
 		@include flexcenter();
 		flex-wrap: wrap;
+		//background-color: lightblue;
 
 		.card {
 			width: 270px;
 			margin: 20px 0;
-			//background-color: lightblue;
 
 			display: flex;
 			flex-direction: column;
@@ -526,6 +527,7 @@ a:active {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+		max-width: 1200px;
 	}
 
 	.team-card {
