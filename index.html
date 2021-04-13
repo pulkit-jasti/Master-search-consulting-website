@@ -642,11 +642,11 @@
 							<br /><br />
 							<b>The journey to your next orbit of excellence could start with Master Search right away from here.</b>
 						</p>
-						<form action="">
-							<input type="text" placeholder="Name" required />
-							<input type="text" placeholder="Email" required />
+						<form action="POST" data-netlify='true'>
+							<input type="text" name=Name" placeholder="Name" required />
+							<input type="text" name="Email" placeholder="Email" required />
 							<p>Upload your latest resume as PDF</p>
-							<input type="file" required />
+							<input type="file" name="Resume" required />
 							<button type="submit">Submit</button>
 						</form>
 					</div>
@@ -656,10 +656,10 @@
 			<section id="contact" class="page-section">
 				<h2 class="section-title">Contact<span>.</span></h2>
 				<div class="container">
-					<form action="">
-						<input type="text" placeholder="Name" required />
-						<input type="text" placeholder="Email" required />
-						<textarea placeholder="Enter your message" required></textarea>
+					<form action="POST" data-netlify="true">
+						<input type="text" name="Name" placeholder="Name" required />
+						<input type="text" name="Email" placeholder="Email" required />
+						<textarea name="Message" placeholder="Enter your message" required></textarea>
 						<button type="submit">Submit</button>
 					</form>
 				</div>
